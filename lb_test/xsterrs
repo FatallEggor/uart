@@ -1,0 +1,12 @@
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/db_fsm.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/tick_gen.v" Line 29: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/fifo.v" Line 53: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/fifo.v" Line 54: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/fifo_tx.v" Line 63: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/lb_test/fifo_tx.v" Line 64: Result of 3-bit expression is truncated to fit in 2-bit target.
+WARNING:Xst:1710 - FF/Latch <uart_female/fifo_tm/w_ptr_reg_1> (without init value) has a constant value of 0 in block <test_uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_female/fifo_tm/w_ptr_reg_0> (without init value) has a constant value of 0 in block <test_uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_male/fifo_tm/w_ptr_reg_1> (without init value) has a constant value of 0 in block <test_uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <uart_male/fifo_tm/w_ptr_reg_0> (without init value) has a constant value of 0 in block <test_uart>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution

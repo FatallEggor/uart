@@ -1,0 +1,23 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Apr 18 18:35:02 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "led0" LOCATE = SITE "R20" LEVEL 1;
+COMP "led1" LOCATE = SITE "T19" LEVEL 1;
+COMP "led2" LOCATE = SITE "U20" LEVEL 1;
+COMP "led3" LOCATE = SITE "U19" LEVEL 1;
+COMP "led4" LOCATE = SITE "V19" LEVEL 1;
+COMP "led5" LOCATE = SITE "V20" LEVEL 1;
+COMP "led6" LOCATE = SITE "Y22" LEVEL 1;
+COMP "led7" LOCATE = SITE "W21" LEVEL 1;
+COMP "clk" LOCATE = SITE "E12" LEVEL 1;
+COMP "rx_full_fem" LOCATE = SITE "B13" LEVEL 1;
+COMP "tx_fem" LOCATE = SITE "F15" LEVEL 1;
+COMP "rx_empty_fem" LOCATE = SITE "A14" LEVEL 1;
+COMP "tx_full_fem" LOCATE = SITE "A13" LEVEL 1;
+COMP "reset" LOCATE = SITE "V8" LEVEL 1;
+COMP "rx_fem" LOCATE = SITE "E16" LEVEL 1;
+COMP "uart_c" LOCATE = SITE "U10" LEVEL 1;
+SCHEMATIC END;
+

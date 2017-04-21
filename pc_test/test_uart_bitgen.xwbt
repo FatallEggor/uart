@@ -1,0 +1,7 @@
+INFILE=/home/egor/Projects/verilog/uart/pc_test/test_uart-par.ncd
+OUTFILE=/home/egor/Projects/verilog/uart/pc_test/test_uart.bit
+FAMILY=Spartan3A and Spartan3AN
+PART=xc3s700an-5fgg484
+WORKINGDIR=/home/egor/Projects/verilog/uart/pc_test
+LICENSE=WebPack
+USER_INFO=211027786_0_0_954

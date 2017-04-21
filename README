@@ -1,0 +1,5 @@
+//////////////////////////////////////////////////////////////////////////////////
+// Engineer: FatallEggor
+// Project name: Simple UART module
+//////////////////////////////////////////////////////////////////////////////////
+This directory contain a simple parameterisable UART module described in Verilog. All parameters contain file uart.v. Directories pc_test and lb_testcontain simple tests for this module with testbenches and test constraints for Spartan3-AN Starter Kit.

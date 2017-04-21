@@ -1,0 +1,8 @@
+verilog work "test_uart.v"
+verilog work "uart.v"
+verilog work "uart_rx.v"
+verilog work "uart_tx.v"
+verilog work "fifo.v"
+verilog work "tick_gen.v"
+verilog work "db_fsm.v"
+verilog work "sw_tick.v"

@@ -1,0 +1,6 @@
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/pc_test/db_fsm.v" Line 32: Result of 20-bit expression is truncated to fit in 19-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/pc_test/tick_gen.v" Line 29: Result of 9-bit expression is truncated to fit in 8-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/pc_test/fifo.v" Line 53: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:HDLCompiler:413 - "/home/egor/Projects/verilog/uart/pc_test/fifo.v" Line 54: Result of 6-bit expression is truncated to fit in 5-bit target.
+WARNING:Xst:3152 - You have chosen to run a version of XST which is not the default solution

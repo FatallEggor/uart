@@ -1,0 +1,334 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'test_uart'
+
+Design Information
+------------------
+Command Line   : map -p xc3s700an-fgg484 -detail -c 100 -ir off -pr off
+test_uart.ngd 
+Target Device  : xc3s700an
+Target Package : fgg484
+Target Speed   : -5
+Mapper Version : spartan3a -- $Revision: 1.55 $
+Mapped Date    : Tue Apr 18 18:26:53 2017
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Logic Utilization:
+  Number of Slice Flip Flops:           129 out of  11,776    1%
+  Number of 4 input LUTs:               272 out of  11,776    2%
+Logic Distribution:
+  Number of occupied Slices:            165 out of   5,888    2%
+    Number of Slices containing only related logic:     165 out of     165 100%
+    Number of Slices containing unrelated logic:          0 out of     165   0%
+      *See NOTES below for an explanation of the effects of unrelated logic.
+  Total Number of 4 input LUTs:         304 out of  11,776    2%
+    Number used as logic:               214
+    Number used as a route-thru:         32
+    Number used for Dual Port RAMs:      58
+      (Two LUTs used per Dual Port RAM)
+
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+  Number of bonded IOBs:                 21 out of     372    5%
+  Number of BUFGMUXs:                     1 out of      24    4%
+
+Average Fanout of Non-Clock Nets:                3.48
+
+Peak Memory Usage:  653 MB
+Total REAL time to MAP completion:  2 secs 
+Total CPU time to MAP completion:   2 secs 
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Map:34 - Speed grade not specified.  Using default "-5".
+
+Section 3 - Informational
+-------------------------
+INFO:LIT:243 - Logical network uart_female/fifo_tm/Mram_array_reg8/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_tm/Mram_array_reg7/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_tm/Mram_array_reg4/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_tm/Mram_array_reg3/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_tm/Mram_array_reg2/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg8/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg7/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg6/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg5/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg4/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg3/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg2/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_tm/Mram_array_reg1/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg8/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg7/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg6/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg5/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg4/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg3/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg2/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_female/fifo_rx/Mram_array_reg1/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg8/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg7/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg6/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg5/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg4/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg3/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg2/SPO has no
+   load.
+INFO:LIT:243 - Logical network uart_male/fifo_rx/Mram_array_reg1/SPO has no
+   load.
+INFO:MapLib:562 - No environment variables are currently set.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+  72 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LOCALBUF 		uart_female/receiver/s_reg[3]_GND_6_o_equal_7_o<3>11/LUT3_D_BUF
+LOCALBUF 		uart_male/receiver/s_reg[3]_GND_6_o_equal_7_o<3>11/LUT3_D_BUF
+LOCALBUF 		uart_female/fifo_rx/_n0060_inv31/LUT2_D_BUF
+LOCALBUF 		uart_male/fifo_rx/_n0060_inv31/LUT2_D_BUF
+LOCALBUF 		uart_female/transmitter/s_reg[3]_PWR_9_o_equal_16_o<3>1/LUT4_D_BUF
+LOCALBUF 		uart_male/transmitter/s_reg[3]_PWR_9_o_equal_16_o<3>1/LUT4_D_BUF
+LOCALBUF 		uart_male/receiver/_n0118_inv5/LUT2_L_BUF
+LOCALBUF 		uart_female/receiver/_n0118_inv5/LUT2_L_BUF
+LOCALBUF 		uart_male/receiver/Mmux_s_next135/LUT4_L_BUF
+LOCALBUF 		uart_female/receiver/Mmux_s_next135/LUT4_L_BUF
+LOCALBUF 		uart_male/receiver/Mmux_s_next31/LUT4_D_BUF
+LOCALBUF 		uart_female/receiver/Mmux_s_next31/LUT4_D_BUF
+LOCALBUF 		uart_male/fifo_rx/_n0060_inv_SW0/LUT4_L_BUF
+LOCALBUF 		uart_female/fifo_rx/_n0060_inv_SW0/LUT4_L_BUF
+LOCALBUF 		uart_male/receiver/Mmux_s_next218/LUT4_L_BUF
+LOCALBUF 		uart_female/receiver/Mmux_s_next218/LUT4_L_BUF
+LOCALBUF 		uart_male/tg/tick<7>4/LUT4_D_BUF
+LOCALBUF 		uart_male/tg/tick<7>9/LUT4_D_BUF
+LOCALBUF 		uart_female/tg/tick<7>9/LUT4_D_BUF
+LOCALBUF 		uart_female/tg/tick<7>10/LUT2_D_BUF
+LOCALBUF 		uart_female/receiver/Mmux_s_next2211/LUT3_D_BUF
+LOCALBUF 		uart_male/receiver/Mmux_s_next2211/LUT3_D_BUF
+LOCALBUF 		uart_female/receiver/_n0125_inv11/LUT4_D_BUF
+LOCALBUF 		uart_male/receiver/_n0125_inv11/LUT4_D_BUF
+LOCALBUF 		uart_male/receiver/Mmux_s_next3_SW3/LUT4_L_BUF
+LOCALBUF 		uart_female/transmitter/state_reg_FSM_FFd2-In21/LUT3_D_BUF
+LOCALBUF 		uart_male/transmitter/state_reg_FSM_FFd2-In21/LUT3_D_BUF
+LOCALBUF 		db_fsm_ex2/Mmux_state_next_4/LUT3_L_BUF
+LOCALBUF 		uart_female/transmitter/Mmux_s_next211/LUT4_D_BUF
+LOCALBUF 		uart_male/transmitter/Mmux_s_next211/LUT4_D_BUF
+LOCALBUF 		uart_male/receiver/_n0118_inv25/LUT4_L_BUF
+LOCALBUF 		uart_female/receiver/_n0118_inv25/LUT4_L_BUF
+LOCALBUF 		uart_male/transmitter/Mmux_s_next11/LUT4_D_BUF
+LOCALBUF 		uart_female/transmitter/Mmux_s_next11/LUT4_D_BUF
+LOCALBUF 		uart_male/receiver/state_reg_FSM_FFd1-In_SW1/LUT4_L_BUF
+LOCALBUF 		uart_female/receiver/state_reg_FSM_FFd1-In_SW1/LUT4_L_BUF
+LOCALBUF 		uart_male/receiver/state_reg_FSM_FFd2-In_SW2/LUT4_L_BUF
+LOCALBUF 		uart_female/receiver/state_reg_FSM_FFd2-In_SW2/LUT4_L_BUF
+LOCALBUF 		uart_female/fifo_rx/_n0071_inv1_rstpot/LUT4_D_BUF
+LOCALBUF 		uart_male/fifo_rx/_n0071_inv1_rstpot/LUT4_D_BUF
+LUT1 		uart_female/tg/Mcount_count_reg_cy<1>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_cy<2>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_cy<3>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_cy<4>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_cy<5>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_cy<6>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<1>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<2>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<3>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<4>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<5>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_cy<6>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<17>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<16>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<15>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<14>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<13>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<12>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<11>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<10>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<9>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<8>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<7>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<6>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<5>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<4>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<3>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<2>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_cy<1>_rt
+LUT1 		uart_female/tg/Mcount_count_reg_xor<7>_rt
+LUT1 		uart_male/tg/Mcount_count_reg_xor<7>_rt
+LUT1 		db_fsm_ex2/Mcount_q_reg_xor<18>_rt
+
+Section 6 - IOB Properties
+--------------------------
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew    | Reg (s)      | Resistor | IBUF/IFD | SUSPEND          |
+|                                    |                  |           |                      | Term  | Strength | Rate    |              |          | Delay    |                  |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| clk                                | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| led0                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led1                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led2                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led3                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led4                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led5                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led6                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| led7                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| rd_uart                            | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| reset                              | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| rx_empty_fem                       | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| rx_empty_m                         | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| rx_fem                             | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| rx_full_fem                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| rx_full_m                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| rx_m                               | IBUF             | INPUT     | LVCMOS33             |       |          |         |              |          | 0 / 0    |                  |
+| tx_fem                             | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
+| tx_full_fem                        | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| tx_full_m                          | IOB              | OUTPUT    | LVCMOS33             |       | 8        | FAST    |              |          | 0 / 0    | 3STATE           |
+| tx_m                               | IOB              | OUTPUT    | LVCMOS33             |       | 8        | SLOW    |              |          | 0 / 0    | 3STATE           |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+This design was not run using timing mode.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+BUFGMUX "clk_BUFGP/BUFG":
+DISABLE_ATTR:LOW
+
+
+
+
+Section 12 - Control Set Information
+------------------------------------
+No control set information for this architecture.
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices        | Slice Reg     | LUTs          | LUTRAM        | BRAM      | MULT18X18 | BUFG  | DCM   | Full Hierarchical Name             |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| test_uart/         |           | 0/178         | 0/129         | 0/304         | 0/58          | 0/0       | 0/0       | 1/1   | 0/0   | test_uart                          |
+| +db_fsm_ex2        |           | 19/19         | 22/22         | 37/37         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/db_fsm_ex2               |
+| +sw_t              |           | 2/2           | 1/1           | 1/1           | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/sw_t                     |
+| +uart_female       |           | 0/77          | 0/53          | 0/130         | 0/26          | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female              |
+| ++fifo_rx          |           | 18/18         | 6/6           | 29/29         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female/fifo_rx      |
+| ++fifo_tm          |           | 7/7           | 4/4           | 14/14         | 10/10         | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female/fifo_tm      |
+| ++receiver         |           | 24/24         | 17/17         | 35/35         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female/receiver     |
+| ++tg               |           | 11/11         | 8/8           | 19/19         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female/tg           |
+| ++transmitter      |           | 17/17         | 18/18         | 33/33         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_female/transmitter  |
+| +uart_male         |           | 0/80          | 0/53          | 0/136         | 0/32          | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male                |
+| ++fifo_rx          |           | 18/18         | 6/6           | 29/29         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male/fifo_rx        |
+| ++fifo_tm          |           | 11/11         | 4/4           | 20/20         | 16/16         | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male/fifo_tm        |
+| ++receiver         |           | 23/23         | 17/17         | 35/35         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male/receiver       |
+| ++tg               |           | 10/10         | 8/8           | 19/19         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male/tg             |
+| ++transmitter      |           | 18/18         | 18/18         | 33/33         | 0/0           | 0/0       | 0/0       | 0/0   | 0/0   | test_uart/uart_male/transmitter    |
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.
